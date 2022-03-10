@@ -77,9 +77,56 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+        <section id="questions" class="container">
+            <div class="text-center my-5 fs-1 fw-bold"><span class="text-danger">Questions</span> and <span class="text-success">Answers</span></div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      How JavaScript works?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>At present javascript we call it is a scripting client side language.  Writing JavaScript code in our editor then we go for run it when we run it,  browser's engine receives the code and gives the final output. <br> There are sevaral steps to complete JavaScript execution: <br>
+
+                        The first one is a Parser called engine, at the time of running JS code parser recevies js engine inside. it first checks the syntax errors if anyhow error found js engine stops to execute it and show the final error output <br>
+                        The second is job of parser is finished and no found errors, Abstract Sytax Tree (AST) starts working here. <br>
+                        The third is convert to machine code parser creates the AST program. <br>
+                        When all is done, Javascript is ready to convert the code and is sent to the system, fianlly we get the reuslt.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How Javascript event loop works?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Javascript event works when Javascript starts running code. While running code Javscript follows the stpes Stack and Queue. Javascrpt first starts the first one stack Javascript receives stack data step by step when it is finished to receive then starts to reveive queue data step by step. while receiving stack, queue waits to invovle itself to the program. Stack is the king here queue is common people have to wait for the program to run to finish the entire program. An invisible thing is heap called heap memory objects are allocated here. Sometimes we can imagine the event loop recursion which is called by itself. Here is a important thing is Non-Blocking. it's a interesting point. Can be handled I/O which is typically managed via events and callbacks while waiting the application for an indexedDB and XHR request to return. it still process like user input.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Difference between Local and Session Storage
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Local storage and Session storage we can imagine it like ROM and RAM. We can think local storage like rom becasue rom has permanent time to save data as local storage does. It has no limit to save data. it can be seen after closing the entire browser it keeps. Only client can handle and see it nd data can not be transferred to the HTTP request has some limit with 5 MB. Session storage we can think it with RAM which has limitation to save data. when we close a program the data finishes can not be replaced. it is also for client for only and limit for 5 to 10 MB. it has no SSL support can not be transferred to the HTTP request too. Overall the main topic is data storing Local sotrage is permanet way to save data to the browser and Session storage has no permanent way to save data.program is closed data is gone. As simple as that.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
         <footer></footer>
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
